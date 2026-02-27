@@ -48,3 +48,10 @@ app-example
 
 # logs
 *.log
+
+## Screenshots
+
+![Login](docs/screenshots/01-login.png)
+![Dashboard](docs/screenshots/02-dashboard.png)
+![Transactions](docs/screenshots/03-transactions.png)
+![Transfer](docs/screenshots/04-transfer.png)
