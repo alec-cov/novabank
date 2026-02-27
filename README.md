@@ -116,5 +116,7 @@ No real banking APIs or financial services are integrated.
 
 ## 📸 Additional Screenshots
 
-![Transactions](docs/screenshots/03-transactions.png)\
-![Transfer](docs/screenshots/04-transfer.png)
+<p align="center">
+  <img src="docs/screenshots/03-transactions.png" width="250"/>
+  <img src="docs/screenshots/04-transfer.png" width="250"/>
+</p>
