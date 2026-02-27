@@ -1,24 +1,26 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+import { BankProvider } from '../context/BankContext';
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
+    <BankProvider>
+      <Stack
+        screenOptions={{
+          headerStyle: { backgroundColor: '#072146' },
+          headerTintColor: '#fff',
+          headerTitleStyle: { fontWeight: 'bold' },
+          headerTitleAlign: 'center',
+          headerBackTitle: 'Volver', 
+          headerBackTitleStyle: { 
+            fontSize: 10, 
+            fontFamily: 'System' 
+          },
+        }}
+      >
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="dashboard" options={{ title: 'NovaBank' }} />
+        <Stack.Screen name="sucursales" options={{ title: 'Sucursales Cercanas' }} />
       </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    </BankProvider>
   );
 }

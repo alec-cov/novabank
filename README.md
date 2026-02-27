@@ -1,50 +1,35 @@
-# Welcome to your Expo app 👋
+🏦 NovaBank - Prototipo Fintech de Alta Fidelidad
+NovaBank es una aplicación móvil de servicios financieros desarrollada con React Native y Expo, diseñada para simular una experiencia bancaria completa, inmersiva y segura. El proyecto se centra en la gestión de estado global, interfaces de usuario dinámicas y la integración de servicios simulados de alta complejidad.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🛠 Tech Stack
+Core: React Native, Expo SDK 52.
+Lenguaje: TypeScript / JavaScript.
+Navegación: Expo Router (Stack Navigation).
+Estado: React Context API (Gestión global de saldos, transacciones y seguridad).
+Mapas: React Native Maps (Google Maps Provider).
+UI/UX: Animated API (Transiciones complejas), Linear Gradient, Modals nativos.
 
-## Get started
+✨ Funcionalidades Clave
 
-1. Install dependencies
+1. Seguridad Biométrica Simulada:
 
-   ```bash
-   npm install
-   ```
+- Login con animación de "escaneo FaceID" y transición de apertura (Splash reveal).
+- Persistencia de la última hora de acceso en el Dashboard.
 
-2. Start the app
+2. Gestión de Cuentas en Tiempo Real:
 
-   ```bash
-   npx expo start
-   ```
+- Dashboard Vivo: Actualización instantánea de saldos tras operaciones.
+- Bloqueo de Tarjetas: Toggle persistente que cambia el estado y la UI (color rojo/alerta) de las tarjetas de crédito.
+- Historial Transaccional: Lista dinámica (FlatList) con inyección de movimientos nuevos.
 
-In the output, you'll find options to open the app in a
+3. Operaciones Financieras:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Pagos Inteligentes: Cálculo de deuda y abono a capital en tarjetas de crédito.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Retiros sin Tarjeta: Generación de códigos temporales de retiro.
 
-## Get a fresh project
+- Validaciones: Lógica de negocio para prevenir transferencias con fondos insuficientes.
 
-When you're ready, run:
+4. Geolocalización Avanzada:
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Mapa interactivo con marcadores (Pines) personalizados con diseño CSS-in-JS y logotipos de marca.
