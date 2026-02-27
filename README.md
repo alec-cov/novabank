@@ -9,7 +9,7 @@ and scalable mobile architecture patterns.
 
 <p align="center">
   <img src="docs/screenshots/01-login.png" width="250"/>
-  <img src="docs/screenshots/02-dashboard.png" width="250"/>
+  <img src="docs/screenshots/04-transfer.png" width="250"/>
 </p>
 
 ---
@@ -118,5 +118,5 @@ No real banking APIs or financial services are integrated.
 
 <p align="center">
   <img src="docs/screenshots/03-transactions.png" width="250"/>
-  <img src="docs/screenshots/04-transfer.png" width="250"/>
+  <img src="docs/screenshots/02-dashboard.png" width="250"/>
 </p>
