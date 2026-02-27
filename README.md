@@ -1,35 +1,126 @@
-🏦 NovaBank - Prototipo Fintech de Alta Fidelidad
-NovaBank es una aplicación móvil de servicios financieros desarrollada con React Native y Expo, diseñada para simular una experiencia bancaria completa, inmersiva y segura. El proyecto se centra en la gestión de estado global, interfaces de usuario dinámicas y la integración de servicios simulados de alta complejidad.
+# 🏦 NovaBank
 
-🛠 Tech Stack
-Core: React Native, Expo SDK 52.
-Lenguaje: TypeScript / JavaScript.
-Navegación: Expo Router (Stack Navigation).
-Estado: React Context API (Gestión global de saldos, transacciones y seguridad).
-Mapas: React Native Maps (Google Maps Provider).
-UI/UX: Animated API (Transiciones complejas), Linear Gradient, Modals nativos.
+High-fidelity fintech mobile prototype built with **React Native +
+Expo**.
 
-✨ Funcionalidades Clave
+NovaBank simulates a modern digital banking experience, focusing on
+structured global state management, financial business logic validation,
+and scalable mobile architecture patterns.
 
-1. Seguridad Biométrica Simulada:
+```{=html}
+<p align="center">
+```
 
-- Login con animación de "escaneo FaceID" y transición de apertura (Splash reveal).
-- Persistencia de la última hora de acceso en el Dashboard.
+`<img src="docs/screenshots/01-login.png" width="250" />`{=html}
+`<img src="docs/screenshots/02-dashboard.png" width="250" />`{=html}
 
-2. Gestión de Cuentas en Tiempo Real:
+```{=html}
+</p>
+```
 
-- Dashboard Vivo: Actualización instantánea de saldos tras operaciones.
-- Bloqueo de Tarjetas: Toggle persistente que cambia el estado y la UI (color rojo/alerta) de las tarjetas de crédito.
-- Historial Transaccional: Lista dinámica (FlatList) con inyección de movimientos nuevos.
+---
 
-3. Operaciones Financieras:
+## 🚀 Tech Stack
 
-- Pagos Inteligentes: Cálculo de deuda y abono a capital en tarjetas de crédito.
+- React Native\
+- Expo SDK 52\
+- TypeScript\
+- Expo Router (Stack Navigation)\
+- React Context API (Global State Management)\
+- React Native Maps (Google Maps Provider)\
+- Animated API\
+- Linear Gradient\
+- Native Modals
 
-- Retiros sin Tarjeta: Generación de códigos temporales de retiro.
+---
 
-- Validaciones: Lógica de negocio para prevenir transferencias con fondos insuficientes.
+## 🧠 Architecture Overview
 
-4. Geolocalización Avanzada:
+NovaBank uses centralized global state powered by React Context API to
+manage:
 
-- Mapa interactivo con marcadores (Pines) personalizados con diseño CSS-in-JS y logotipos de marca.
+- Account balances\
+- Transaction history\
+- Card lock state\
+- Authentication session state
+
+Financial operations trigger controlled state mutations, ensuring:
+
+- Immediate UI updates\
+- Consistent balance recalculations\
+- Validation against insufficient funds\
+- Deterministic transaction injection into history
+
+Navigation is handled via Expo Router using stack-based routing.
+
+---
+
+## ✨ Core Features
+
+### 🔐 Simulated Biometric Authentication
+
+- FaceID-style animated login\
+- Persistent last access timestamp\
+- Controlled session state
+
+### 💳 Real-Time Account Management
+
+- Live dashboard with instant balance updates\
+- Credit card lock toggle with persistent UI state\
+- Dynamic transaction history (FlatList)
+
+### 💰 Financial Operations Logic
+
+- Credit card payment calculation logic\
+- Cardless withdrawal temporary code generation\
+- Business rules preventing invalid transfers
+
+### 🗺 Geolocation Integration
+
+- Interactive map view with custom branded markers\
+- Styled pin components (CSS-in-JS)
+
+---
+
+## 📂 Project Structure
+
+    app/        → Screens and navigation (Expo Router)
+    components/ → Reusable UI components
+    context/    → Global state management
+    hooks/      → Custom logic hooks
+    constants/  → Static configuration values
+    assets/     → Images and UI assets
+    docs/       → Screenshots and documentation
+
+---
+
+## 🛠 Getting Started
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the project
+
+```bash
+npx expo start
+```
+
+Scan the QR code using **Expo Go**.
+
+---
+
+## ⚠️ Disclaimer
+
+This is a simulated fintech environment built for demonstration
+purposes.\
+No real banking APIs or financial services are integrated.
+
+---
+
+## 📸 Additional Screenshots
+
+![Transactions](docs/screenshots/03-transactions.png)\
+![Transfer](docs/screenshots/04-transfer.png)
