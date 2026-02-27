@@ -7,8 +7,10 @@ NovaBank simulates a modern digital banking experience, focusing on
 structured global state management, financial business logic validation,
 and scalable mobile architecture patterns.
 
-![Login](docs/screenshots/01-login.png)
-![Dashboard](docs/screenshots/02-dashboard.png)
+<p align="center">
+  <img src="docs/screenshots/01-login.png" width="250"/>
+  <img src="docs/screenshots/02-dashboard.png" width="250"/>
+</p>
 
 ---
 
